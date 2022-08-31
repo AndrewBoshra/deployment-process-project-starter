@@ -53,7 +53,6 @@ jobs:
       - node/install:
           node-version: '14.15' 
       - eb/setup
-      - aws-cli/setup
       - checkout
       - run:
           name: Deploy App
@@ -67,7 +66,6 @@ jobs:
     steps:
       - node/install:
           node-version: '14.15' 
-      - eb/setup
       - aws-cli/setup
       - checkout
       - run:
