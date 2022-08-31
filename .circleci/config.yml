@@ -86,11 +86,11 @@ workflows:
           #     only:
           #       - master
           # type: approval
-          requires:
-            - build
+          # requires:
+          #   - build
       - deploy_api:
           requires:
-            - hold
+            - build
       - deploy_frontend:
           requires:
             - deploy_api
