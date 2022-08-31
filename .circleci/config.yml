@@ -80,7 +80,7 @@ workflows:
   udagram:
     jobs:
       - build
-      - hold:
+      # - hold:
           # filters:
           #   branches:
           #     only:
