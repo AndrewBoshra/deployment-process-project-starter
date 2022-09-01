@@ -78,17 +78,17 @@ workflows:
   udagram:
     jobs:
       - build
-      # - hold:
-          # filters:
-          #   branches:
-          #     only:
-          #       - master
-          # type: approval
-          # requires:
-          #   - build
-      - deploy_api:
+      - hold:
+          filters:
+            branches:
+              only:
+                - master
+          type: approval
           requires:
             - build
+      - deploy_api:
+          requires:
+            - hold
       - deploy_frontend:
           requires:
             - deploy_api
