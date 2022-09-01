@@ -35,7 +35,7 @@ jobs:
             echo "Lint the frontend"
             npm run frontend:lint
       - run:
-          name: Front-End Build
+          name: Front End Build
           command: |
             echo "Build the frontend app"
             npm run frontend:build
