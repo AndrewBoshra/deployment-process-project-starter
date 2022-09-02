@@ -1,6 +1,8 @@
 # Hosting a Full-Stack Application
 # Udagram
 [Live Website](http://udagram-app-aws.s3-website-us-west-2.amazonaws.com/)
+
+[![udagram](https://circleci.com/gh/AndrewBoshra/deployment-process-project-starter.svg?style=svg)](#)  
 ### Dependencies
 
 ```
@@ -16,8 +18,9 @@
 
 ```
 
-### Diagram
+### Diagrams
 ![diagram](./diagram.png)
+![pipeline diagram](./pipeline%20diagram.png)
 ### Installation
 
 Provision the necessary AWS services needed for running the application:
